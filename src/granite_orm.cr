@@ -111,9 +111,9 @@ class Granite::ORM
         {% elsif type.id == Int64.id %}
           @{{_name.id}} = value.to_i64
         {% elsif type.id == Float32.id %}
-          @{{_name.id}} = value.to_f32{0.0}
+          @{{_name.id}} = value.to_f32
         {% elsif type.id == Float64.id %}
-          @{{_name.id}} = value.to_f64{0.0}
+          @{{_name.id}} = value.to_f64
         {% elsif type.id == Bool.id %}
           @{{_name.id}} = ["1", "yes", "true", true].includes?(value)
         {% elsif type.id == Time.id %}
